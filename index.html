@@ -1,168 +1,225 @@
-        nav {
-            background-color: #182850;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;<!DOCTYPE html>
-<html>
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Explore World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fb;
-            color: #222;
-        }
+<title>My Apology 🥺💚</title>
 
-        header {
-            background-color: #263c78;
-            color: white;
-            text-align: center;
-            padding: 35px;
-        }
-        }
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-        nav a:hover {
-            color: #ffd166;
-        }
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d1fae5, #10b981);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+  }
 
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #dce7ff;
-        }
+  .container {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(16,185,129,0.3);
+    max-width: 480px;
+    width: 90%;
+    border: 3px solid #10b981;
+  }
 
-        .hero h2 {
-            font-size: 38px;
-        }
+  h1 {
+    color: #065f46;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-        .button {
-            display: inline-block;
-            background-color: #263c78;
-            color: white;
-            padding: 14px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
+  p {
+    font-size: 16px;
+    color: #065f46;
+    line-height: 1.7;
+    white-space: pre-line;
+  }
 
-        .button:hover {
-            background-color: #182850;
-        }
+  .emoji {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
 
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
+  .buttons {
+    position: relative;
+    height: 80px;
+    margin-top: 25px;
+  }
 
-        .card {
-            display: inline-block;
-            width: 220px;
-            background: white;
-            margin: 15px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px #ccc;
-            vertical-align: top;
-        }
+  button {
+    padding: 14px 28px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.2s;
+  }
 
-        .card button {
-            background-color: #263c78;
-            color: white;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
+  #yes, #forgive {
+    background: #10b981;
+    color: white;
+    left: 30px;
+    box-shadow: 0 5px 15px rgba(16,185,129,0.4);
+  }
 
-        .card button:hover {
-            background-color: #182850;
-        }
+  #no, #notYet {
+    background: #d1fae5;
+    color: #065f46;
+    right: 30px;
+    border: 2px solid #10b981;
+  }
 
-        footer {
-            background-color: #182850;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  #yes:hover, #forgive:hover {
+    transform: scale(1.08);
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>🌍 Explore World</h1>
-    <p>Discover amazing places around the world</p>
-</header>
+<div class="container">
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#places">Places</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <!-- FIRST SCREEN -->
+  <div id="screen1">
 
-<section class="hero" id="home">
-    <h2>Where Will You Go?</h2>
-    <p>Explore beautiful destinations and discover new adventures.</p>
-    <br>
-    <a class="button" href="#places">Explore Places</a>
-</section>
+    <div class="emoji">🥺💚🌸</div>
 
-<section id="places">
-    <h2>✨ Popular Destinations</h2>
+    <h1>Are you still upset? 🥺</h1>
 
-    <div class="card">
-        <h3>🇯🇵 Japan</h3>
-        <p>Beautiful temples, technology and amazing food.</p>
-        <button onclick="alert('Japan selected! 🇯🇵')">
-            Choose
-        </button>
-    </div>
-
-    <div class="card">
-        <h3>🇮🇹 Italy</h3>
-        <p>Famous for history, art and delicious cuisine.</p>
-        <button onclick="alert('Italy selected! 🇮🇹')">
-            Choose
-        </button>
-    </div>
-
-    <div class="card">
-        <h3>🇵🇰 Pakistan</h3>
-        <p>Mountains, valleys, history and beautiful culture.</p>
-        <button onclick="alert('Pakistan selected! 🇵🇰')">
-            Choose
-        </button>
-    </div>
-</section>
-
-<section id="about">
-    <h2>📖 About This Website</h2>
     <p>
-        This is a small example of an interactive website
-        created using HTML, CSS and JavaScript.
+I was only teasing you meow meow 😭.
+I really care about your feelings 💚.
+
+I'm sorry if I hurt you 🥺.
+u r my little cute meow meow.
+I know I have made mistakes,
+but I genuinely didn't want to hurt you 😔.
+
+I'm also sorry for blaming you unfairly 🙏.
+I hope you can forgive me 🥺💚✨
     </p>
-</section>
 
-<section id="contact">
-    <h2>📩 Contact</h2>
-    <p>Email: explore@example.com</p>
-    <p>Phone: 123-456-789</p>
-</section>
+    <div class="buttons">
+      <button id="yes">Yes 🥺</button>
+      <button id="no">No 😭</button>
+    </div>
 
-<footer>
-    <p>© 2026 Explore World | School Project</p>
-</footer>
+  </div>
+
+
+  <!-- SECOND SCREEN -->
+  <div id="screen2" class="hidden">
+
+    <div class="emoji">🥺🙏💚</div>
+
+    <h1>Do you accept my apology? 🌸</h1>
+
+    <p>
+I understand if you need some time 🕊️,
+but I really hope we can move past this 🌿💚.
+    </p>
+
+    <div class="buttons">
+      <button id="forgive">I forgive you 💚</button>
+      <button id="notYet">Not yet 🥺</button>
+    </div>
+
+  </div>
+
+
+  <!-- FINAL SCREEN -->
+  <div id="screen3" class="hidden">
+
+    <div class="emoji">🎉🥹💚✨</div>
+
+    <h1>Thank you! 🥺💚</h1>
+
+    <p>
+I really appreciate you accepting my apology 🥹💚.
+
+I'll try to be more thoughtful about your feelings 🌷
+and learn from my mistakes 🌱.
+
+Thank you for hearing me out 🫶✨
+i love u 
+🌸💚🥺✨🌿
+    </p>
+
+  </div>
+
+</div>
+
+
+<script>
+
+  const yesBtn = document.getElementById("yes");
+  const noBtn = document.getElementById("no");
+
+  const forgiveBtn = document.getElementById("forgive");
+  const notYetBtn = document.getElementById("notYet");
+
+  const screen1 = document.getElementById("screen1");
+  const screen2 = document.getElementById("screen2");
+  const screen3 = document.getElementById("screen3");
+
+
+  // YES → SECOND SCREEN
+  yesBtn.addEventListener("click", () => {
+    screen1.classList.add("hidden");
+    screen2.classList.remove("hidden");
+  });
+
+
+  // NO MOVES AROUND
+  noBtn.addEventListener("mouseover", () => {
+
+    const x = Math.random() * 180 - 90;
+    const y = Math.random() * 40 - 20;
+
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+
+  });
+
+
+  // I FORGIVE YOU → FINAL SCREEN
+  forgiveBtn.addEventListener("click", () => {
+
+    screen2.classList.add("hidden");
+    screen3.classList.remove("hidden");
+
+  });
+
+
+  // NOT YET MOVES AROUND
+  notYetBtn.addEventListener("mouseover", () => {
+
+    const x = Math.random() * 180 - 90;
+    const y = Math.random() * 40 - 20;
+
+    notYetBtn.style.transform = `translate(${x}px, ${y}px)`;
+
+  });
+
+</script>
 
 </body>
 </html>
-
-
-  
+```
+      
